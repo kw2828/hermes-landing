@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Hermes`,
-    description: `Hermes is a friendly SMS-based assistant to engage and encourage NYC health workers and MTA workers with nudges, self-reporting, and form new COVID-safe behaviors.`,
+    description: `Hermes is a friendly SMS-based assistant to engage and encourage NYC health workers and MTA workers with nudges, self-reporting of COVID symptoms, and form new COVID-safe behaviors.`,
     author: `kevincwu`,
   },
   plugins: [
