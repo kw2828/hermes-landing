@@ -13,28 +13,17 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+const LayoutSection = ({ children }) => {
   return (
-    <div className="container-hero">
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <div className="container">
       <main>{children}</main>
       { /*Footer /> */}
     </div>
   )
 }
 
-Layout.propTypes = {
+LayoutSection.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default LayoutSection

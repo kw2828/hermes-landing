@@ -5,6 +5,10 @@ import SEO from "../components/seo";
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import Hero from './'
 
+import dv_logo from '../images/hermes/dv_logo.png'
+import mta_logo from '../images/hermes/mta_logo.png'
+
+
 export default class HeroPage extends React.Component {
     state = {
         phone: "",
@@ -48,9 +52,8 @@ export default class HeroPage extends React.Component {
           button = <button type="submit" className="not_submitted" />
         }
         return (
-          <div>
-            <SEO title="Home" />
             <div className="Hero">
+              <SEO title="Home" />
               <div className="HeroGroup">
                 <div className="mobile-image" />
                 <div className="info">
@@ -71,11 +74,15 @@ export default class HeroPage extends React.Component {
                           {button}                
                       </div>
                   </form>
+                  <div className="logos">
+                    <span>Powered by</span>
+                    <img className="logo" src={dv_logo}/>
+                    <img className="logo" src={mta_logo}/>
+                  </div>
                 </div>
-                <div className="image"></div>
+                <div className="image"></div>                
               </div>
             </div>
-          </div>
         );
     }
 }
