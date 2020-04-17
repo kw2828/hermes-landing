@@ -64,8 +64,6 @@ a {
   z-index: 2;
 }
 
-
-
 .HeroGroup {
   width: 100%;
   height: 100%;
@@ -143,6 +141,100 @@ input:focus {
 }
 
 
+.Section {
+  min-height: 100%;
+  margin: 0 auto;
+  max-width: 1100px;
+  z-index: 2;
+  margin-top: 80px;
+}
+
+.SectionGroup {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  display: grid;
+  text-align: left;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.section-info {
+  max-width: 450px;
+}
+
+.section-right {
+  margin-left: 80px;
+  width: 100%;
+  max-width: 500px;;
+}
+
+.CTAGroup {
+  width: 100%;
+  height: 500px;
+  padding: 0;
+  border: 0;
+  display: grid;
+  text-align: left;
+  align-items: center;
+  margin-top: 50px;
+  justify-items: center;
+  grid-template-columns: repeat(1, 100%);
+  background: url('../images/hermes/mta_cta.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-info {
+  max-width: 750px;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+}
+
+.cta-text {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cta-row {
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cta-number {
+  color:#FFE103;
+}
+
+.screenshot {
+  width: 60%;
+}
+
+.get_started {
+  width: 220px;
+  height: 60px;
+  background: url('../images/hermes/get_started.png');
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 15px;
+  margin-left: -15px;
+  padding: 0;
+  float: left;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-items: center;
+  animation: HeroAnimationVertical 5s 0.5s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
 .logos {
   position: relative;
   margin-top: 100px;
@@ -154,6 +246,12 @@ input:focus {
   padding-left: 10px;
   width: 60px;
   height: 60px;
+  vertical-align: middle;
+}
+
+.hermes {
+  width: 130px;
+  height: 130px;
   vertical-align: middle;
 }
 

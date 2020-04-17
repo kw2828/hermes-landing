@@ -2,23 +2,25 @@ import PropTypes from "prop-types"
 import React from "react"
 import './footer.css'
 
+import dv_logo from '../images/hermes/dv_logo.png'
+import mta_logo from '../images/hermes/mta_logo.png'
+
+
 const Footer = ({ siteTitle }) => (
   <div className="Footer">
     <div className="FooterGroup">
       <div className="FooterInfo">
-        <span className="location"/>
         <span><p className="nyc">New York City</p></span> 
-        <p className="copyright">© Workpal, 2020. All rights reserved</p>
+        <p className="copyright">© MTA & BCG Digital Ventures, 2020. All rights reserved</p>
       </div>
       <div className="Icons">
-        <a href = "mailto: founder@workpal.chat">
-          <span className="email"/>
-        </a>
-        <a href="https://www.linkedin.com/company/workpal-chat/" target="_blank">
-          <span className="linkedin"></span>
-        </a> 
+        <div className="logos-footer">
+            <span className="footer-power">Powered by</span>
+            <img className="logo" src={dv_logo}/>
+            <img className="logo" src={mta_logo}/>
+        </div>
       </div>
-      <p className="copyright-mobile">© Workpal, 2020. All rights reserved</p>
+      <p className="copyright-mobile">© MTA + BCG Digital Ventures, 2020. All rights reserved</p>
     </div>
   </div>
 )

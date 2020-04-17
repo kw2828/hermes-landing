@@ -61,7 +61,7 @@ export default class HeroPage extends React.Component {
                     Times are tough. <br /> Hermes is here to help.
                   </h1>
                   <p>
-                  Hermes is a friendly SMS-based assistant to engage and encourage NYC health workers and MTA workers with nudges, self-reporting of COVID symptoms, and form new COVID-safe behaviors. 
+                  Hermes is a friendly SMS-based assistant to engage and encourage NYC health workers and MTA workers with nudges, self-report COVID symptoms, and form new COVID-safe behaviors. 
                   </p>
                   <form onSubmit={this.handleSubmit} className="form-group">
                         <div className="row">
